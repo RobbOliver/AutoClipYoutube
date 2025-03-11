@@ -48,6 +48,7 @@ O projeto foi pensado para uso **automatizado**, ideal para streamers que deseja
         git clone https://github.com/seuusuario/AutoClipYoutube.git
 
 2. **Configure suas credenciais no config.py:**
+    
         API_KEY do YouTube.
         Channel ID da live que deseja monitorar.
 
