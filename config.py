@@ -1,10 +1,10 @@
 # Single Source of Truth
 
 # ✅ API Key
-API_KEY_YT = ""
+API_KEY_YT = "AIzaSyAfl7fTUQG5TH7IzlMmtFZLaxWW2kKBdR4"
 
 # ✅ Channel ID
-YOUTUBER_CHANNEL = ""
+YOUTUBER_CHANNEL = "@TcK10"
 
 # ✅ PATHS
 FFMPEG_PATH = "ffmpeg.exe"
