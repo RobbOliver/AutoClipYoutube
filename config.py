@@ -1,7 +1,7 @@
 # Single Source of Truth
 
 # ✅ API Key
-API_KEY_YT = "AIzaSyAfl7fTUQG5TH7IzlMmtFZLaxWW2kKBdR4"
+API_KEY_YT = ""
 
 # ✅ Channel ID
 YOUTUBER_CHANNEL = "@TcK10"
