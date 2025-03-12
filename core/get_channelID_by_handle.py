@@ -23,7 +23,9 @@ def get_channelID_by_handle():
 
         items = data.get("items")
         if items and len(items) > 0:
-            return items[0]["id"]
+            dataStreammer = {"Handle": YOUTUBER_CHANNEL,
+                             "ChannelID": items[0]["id"]}
+            return dataStreammer
 
         raise ChannelIDNotFoundError(
             "❌ No channels found for this handle.")
