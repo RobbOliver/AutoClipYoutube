@@ -40,7 +40,7 @@ O projeto foi pensado para uso **automatizado**, ideal para streamers que deseja
 
 ---
 
-## 💻 Como Executar
+## 💻 Como Executar (Em desenvolvimento!)
 
 1. **Clone o repositório:**
 
