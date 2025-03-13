@@ -10,3 +10,10 @@ class VideoIDNotFoundError(Exception):
 
     def __init__(self, message="Error to get VideoID."):
         super().__init__(message)
+
+
+class ChatIDNotFoundError(Exception):
+    """Exceção lançada quando o Chat ID não puder ser encontrado a partir do Video ID."""
+
+    def __init__(self, message="Error to get ChatID."):
+        super().__init__(message)
