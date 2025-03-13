@@ -17,3 +17,16 @@ class ChatIDNotFoundError(Exception):
 
     def __init__(self, message="Error to get ChatID."):
         super().__init__(message)
+
+
+class YTDLNotFoundError(Exception):
+    """Exceção lançada quando o yt-dlp não puder ser encontrado."""
+
+    def __init__(self, message="yt-dlp not found."):
+        super().__init__(message)
+
+class FFmpegNotFoundError(Exception):
+    """Exceção lançada quando o ffmpeg não puder ser encontrado."""
+
+    def __init__(self, message="ffmpeg not found."):
+        super().__init__(message)
