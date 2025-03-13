@@ -1,20 +1,19 @@
 # Single Source of Truth
+import os
 
 # ✅ API Key
-API_KEY_YT = ""
+API_KEY_YT = ""  #Coloque aqui sua KEY
 
 # ✅ Channel ID
-YOUTUBER_CHANNEL = "@TcK10"
+YOUTUBER_CHANNEL = "@"   # Coloque aqui o @do youtuber
 
 # ✅ PATHS
-FFMPEG_PATH = "ffmpeg.exe"
-YT_DLP_PATH = "yt-dlp.exe"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+FFMPEG_PATH = os.path.join(base_dir, "ffmpeg.exe")
+YT_DLP_PATH = os.path.join(base_dir, "yt-dlp.exe")
 
 # ✅ POLLING INTERVAL
-POLLING_INTERVAL = 10
-
-# ✅ COMMANDS HANDLE
-COMMANDS = ["!clip"]
+POLLING_INTERVAL = 7
 
 # ✅ ONLY TRIGGER BY
 COMMANDS_TRIGGER = ["ALL"]
