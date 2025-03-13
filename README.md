@@ -52,11 +52,18 @@ O projeto foi pensado para uso **automatizado**, ideal para streamers que deseja
         API_KEY do YouTube.
         Channel ID da live que deseja monitorar.
 
+        (use o config.py.exemple como modelo, completando os campos vazios)
+
 3. **Instale as dependências:**
 
         pip install -r requirements.txt
 
-4. **Execute o projeto:**
+4. **Baixe os binários ffmpeg e yt-dlp:**
+
+        você consegue os .exe de cada um nos próprios sites
+
+
+5. **Execute o projeto:**
 
         python main.py
 
