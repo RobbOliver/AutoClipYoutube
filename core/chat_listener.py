@@ -1,8 +1,10 @@
+import subprocess
 import requests
 import time
 
 
-from config import API_KEY_YT
+from config import API_KEY_YT, POLLING_INTERVAL
+from core.command_handler import handle_command
 
 
 NEXT_PAGE_TOKEN = None
@@ -29,8 +31,18 @@ def get_chat_messages(streamer_data):
             message = data_msg["snippet"]["displayMessage"]
             messages.append((user, message))  # Retorna usuário e mensagem
 
-        NEXT_PAGE_TOKEN = response.get("nextPageToken", None)
+        NEXT_PAGE_TOKEN = data.get("nextPageToken", None)
     except KeyError as ex:
         print(f"❌ Erro ao processar dados do YouTube: {ex}")
 
     return messages
+
+
+def start_monitor_chat(streamer_data):
+
+    while True:
+        messages = get_chat_messages(streamer_data)
+        for user, message in messages:
+            handle_command(user, message)
+
+        time.sleep(POLLING_INTERVAL)
