@@ -175,3 +175,5 @@ cython_debug/
 
 # Others
 config.py
+ffmpeg.exe
+yt-dlp.exe
