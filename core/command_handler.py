@@ -1,4 +1,5 @@
 from commands import clip, clip2
+from config import COMMANDS_TRIGGER
 
 
 def handle_command(user, message):
@@ -21,7 +22,8 @@ def handle_command(user, message):
 
     # Verifica se a mensagem é um comando conhecido
     if command in commands_options:
-        commands_options[command](user)
-        print(f"🎯🎥 Clip solicitado por {user}.")
+        if user in COMMANDS_TRIGGER or COMMANDS_TRIGGER[0] == "ALL":
+            commands_options[command](user)
+            print(f"🎯🎥 Clip solicitado por {user}.")
 
     return None
